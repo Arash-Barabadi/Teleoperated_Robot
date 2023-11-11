@@ -1,8 +1,8 @@
-# Teleoperates_Auto
+# Teleoperated_Auto
 In a university course/project we as a student team focusing on building and testing a teleoperated robot.
 
 # 1- In the first step we installed ROS2 on jetson Nano as follows:
-## Dependencies
+## Dependencies 
 ### install additional dependencies
 ```bash
 sudo apt install -y python3-colcon-common-extensions
@@ -12,3 +12,6 @@ sudo apt install -y python3-colcon-common-extensions
       mkdir -p ~/teleauto_ws/src
       cd ~/teleauto_ws
 ```
+## clone ROS2 repositories: 
+### clone ROS2 repositories into the "src" directory;
+
