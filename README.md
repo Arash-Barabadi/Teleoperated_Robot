@@ -14,4 +14,8 @@ sudo apt install -y python3-colcon-common-extensions
 ```
 ## clone ROS2 repositories: 
 ### clone ROS2 repositories into the "src" directory;
+```bash
+wget https://raw.githubusercontent.com/ros2/ros2/release-foxy/ros2.repos
+vcs import src < ros2.repos
+```
 
