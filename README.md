@@ -19,3 +19,7 @@ wget https://raw.githubusercontent.com/ros2/ros2/release-foxy/ros2.repos
 vcs import src < ros2.repos
 ```
 
+
+
+vncviewr software 
+sudo apt-get install vncviewer
