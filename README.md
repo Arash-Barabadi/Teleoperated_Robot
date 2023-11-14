@@ -1,4 +1,4 @@
-# Teleoperated_Auto
+gvncviewer 192.168.55.1# Teleoperated_Auto
 In a university course/project we as a student team focusing on building and testing a teleoperated robot.
 
 # 1- In the first step we installed ROS2 on jetson Nano as follows:
@@ -23,3 +23,4 @@ vcs import src < ros2.repos
 
 vncviewr software 
 sudo apt-get install gvncviewer
+gvncviewer 192.168.55.1
