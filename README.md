@@ -22,4 +22,4 @@ vcs import src < ros2.repos
 
 
 vncviewr software 
-sudo apt-get install vncviewer
+sudo apt-get install gvncviewer
