@@ -11,10 +11,10 @@ sudo apt install -y python3-colcon-common-extensions
 ```bash
       mkdir -p ~/teleauto_ws/src
       cd ~/teleauto_ws
-
-## Install and running procedure of gvncviewer :
+```
+## Install and running procedure of gvncviewer:
 ```bash
 sudo apt-get install gvncviewer
 gvncviewer 192.168.55.1
-
+Pass : abcd1234
 ```
