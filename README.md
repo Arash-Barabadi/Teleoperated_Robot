@@ -11,17 +11,10 @@ sudo apt install -y python3-colcon-common-extensions
 ```bash
       mkdir -p ~/teleauto_ws/src
       cd ~/teleauto_ws
-```
-## clone ROS2 repositories: 
-### clone ROS2 repositories into the "src" directory;
-```bash
-wget https://raw.githubusercontent.com/ros2/ros2/release-foxy/ros2.repos
-vcs import src < ros2.repos
-```
-
 
 ## Install and running procedure of gvncviewer :
 ```bash
 sudo apt-get install gvncviewer
 gvncviewer 192.168.55.1
+
 ```
