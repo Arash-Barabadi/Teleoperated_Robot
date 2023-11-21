@@ -20,7 +20,8 @@ vcs import src < ros2.repos
 ```
 
 
-
-vncviewr software 
+## Install and running procedure of gvncviewer :
+```bash
 sudo apt-get install gvncviewer
 gvncviewer 192.168.55.1
+```
