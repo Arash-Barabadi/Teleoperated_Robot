@@ -38,4 +38,8 @@ or manually by using the command
 $ sudo apt install ros-galactic-xacro ros-galactic-diagnostic-updater
 
 Please note that the ZED ROS2 Wrapper has not been tested with Galactic, it has been designed to work with Foxy and Humble, the LTS distributions of ROS2.
-## 
+## Lastly, after dependencies are installed, we can build our workspace again with the driver stack pacakge : 
+```bash
+colcon build
+```
+
