@@ -28,7 +28,7 @@ git submodule update --init --force --remote
 ```bash
 cd $HOME/f1tenth_ws
 rosdep update
-rosdep install --from-paths src -i -y
+rosdep install --from-paths src -i -y --rosdistro foxy
 ```
 ## If the command "rosdep install --from-paths src -i -y" doesn't work:
 You are missing the xacro and the diagnostic_updater packages.
