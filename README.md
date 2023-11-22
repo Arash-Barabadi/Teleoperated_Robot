@@ -30,6 +30,11 @@ cd $HOME/f1tenth_ws
 rosdep update
 rosdep install --from-paths src -i -y --rosdistro foxy
 ```
+
+## config file modification 
+### we have 2 config files.Both mentioned config files should match each other. 
+### ackermann parameter has been changed. 
+
 ## If the command "rosdep install --from-paths src -i -y" doesn't work:
 You are missing the xacro and the diagnostic_updater packages.
 You can easily install all the dependencies automatically by launching this command from the root folder of your colcon workspace:
