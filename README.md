@@ -45,7 +45,7 @@ colcon build --symlink-install
 ```
 
 ## config folder modification
-### config folder contains 5 files with .yaml extension. For adjusting the steering wheel we should change joy_teleop.yaml and vesc.yaml accordingly.
+### config folder contains 5 files with .yaml extension. For adjusting the steering wheel we should change the parameters in the joy_teleop.yaml and vesc.yaml files, accordingly.
 
 
 
