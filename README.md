@@ -13,4 +13,12 @@ Pass : abcd1234
 mkdir -p ~/projekt1_ws/src
 cd projekt1_ws
 colcon build
-
+```
+## Next, we’ll clone the repo into the src directory of our workspace
+```bash
+cd src
+git clone https://github.com/f1tenth/f1tenth_system.git
+```
+## Then we’ll update the git submodules and pull in all the necessary packages
+cd f1tenth_system
+git submodule update --init --force --remote
