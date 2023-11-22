@@ -29,11 +29,7 @@ git submodule update --init --force --remote
 cd $HOME/f1tenth_ws
 rosdep update
 rosdep install --from-paths src -i -y --rosdistro foxy
-```
-
-## config file modification 
-### we have 2 config files.Both mentioned config files should match each other. 
-### ackermann parameter has been changed. 
+``` 
 
 ## If the command "rosdep install --from-paths src -i -y" doesn't work:
 You are missing the xacro and the diagnostic_updater packages.
@@ -47,4 +43,9 @@ Please note that the ZED ROS2 Wrapper has not been tested with Galactic, it has 
 ```bash
 colcon build --symlink-install
 ```
+
+## config folder modification
+### config folder contains 5 files with .yaml extension. For adjusting the steering wheel we should change joy_teleop.yaml and vesc.yaml accordingly.
+
+
 
