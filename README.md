@@ -45,7 +45,28 @@ colcon build --symlink-install
 ```
 
 ## config folder modification
-### config folder contains 5 files with .yaml extension. For adjusting the steering wheel we should change the parameters in the joy_teleop.yaml and vesc.yaml files, accordingly.
+### config folder contains 5 files with .yaml extension. For adjusting the steering wheel and motor configuration, we should change the parameters in the joy_teleop.yaml and vesc.yaml files, accordingly.
+
+## The command for checking the connection bewteen VESC and Laptop (Jetson) : 
+```bash
+sudo chmod 777 /dev/ttyACM0
+````
+
+## The command for activating all mechanism 
+````bash
+ros2 launch f1tenth_stack bringup_launch.py
+````
+
+## The message? for testing the Steering wheel : 
+```bash
+ros2 topic echo /commands/servo/position
+````
+## The message? for testing driving motor movement
+```bash
+ros2 topic echo /commands/motor/speed
+````
+
+
 
 
 
