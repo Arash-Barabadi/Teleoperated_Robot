@@ -1,6 +1,6 @@
 gvncviewer 192.168.55.1# Teleoperated_Auto
 In a university course/project we as a student team focusing on building and testing a teleoperated robot.
-
+# https://f1tenth.readthedocs.io/en/foxy_test/getting_started/firmware/drive_workspace.html#installing-ros-2-and-its-utilities
 ## Install and running procedure of gvncviewer(virtual application for Virtual Network Computing):
 
 ```bash
