@@ -20,5 +20,22 @@ cd src
 git clone https://github.com/f1tenth/f1tenth_system.git
 ```
 ## Then we’ll update the git submodules and pull in all the necessary packages
+```bash
 cd f1tenth_system
 git submodule update --init --force --remote
+```
+## After git finishes cloning, we can now install all dependencies for our packages with rosdep:
+```bash
+cd $HOME/f1tenth_ws
+rosdep update
+rosdep install --from-paths src -i -y
+```
+## If the command "rosdep install --from-paths src -i -y" doesn't work:
+You are missing the xacro and the diagnostic_updater packages.
+You can easily install all the dependencies automatically by launching this command from the root folder of your colcon workspace:
+rosdep install --from-paths src --ignore-src -r -y
+or manually by using the command
+$ sudo apt install ros-galactic-xacro ros-galactic-diagnostic-updater
+
+Please note that the ZED ROS2 Wrapper has not been tested with Galactic, it has been designed to work with Foxy and Humble, the LTS distributions of ROS2.
+## 
