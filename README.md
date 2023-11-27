@@ -1,7 +1,6 @@
 gvncviewer 192.168.55.1# Teleoperated_Auto
 In a university course/project we as a student team focusing on building and testing a teleoperated robot.
 # https://f1tenth.readthedocs.io/en/foxy_test/getting_started/firmware/drive_workspace.html#installing-ros-2-and-its-utilities
-## Install and running procedure of gvncviewer(virtual application for Virtual Network Computing):
 
 ## Creat a workspace and make a package ready into it.
 ```bash
@@ -59,11 +58,9 @@ ros2 topic echo /commands/servo/position
 ## The message? for testing driving motor movement
 ```bash
 ros2 topic echo /commands/motor/speed
-````
+```
 
-
-
-## At the end of the day we should send all our software packages to Jetson Orin NX.
+## At the end of the day we should send all our software packages to Jetson Orin NX. So we have to install and run the so called gvncviewer(virtual application for Virtual Network Computing):
 ```bash
 sudo apt-get install gvncviewer
 gvncviewer 192.168.55.1
