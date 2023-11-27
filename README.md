@@ -2,7 +2,7 @@ gvncviewer 192.168.55.1# Teleoperated_Auto
 In a university course/project we as a student team focusing on building and testing a teleoperated robot.
 # https://f1tenth.readthedocs.io/en/foxy_test/getting_started/firmware/drive_workspace.html#installing-ros-2-and-its-utilities
 
-## At first for building any packages we should install COLCON.
+## At first for building any packages we should install COLCON, therefore ;
 ```bash
 sudo apt install python3-colcon-common-extensions
 ```
