@@ -22,7 +22,7 @@ colcon build
 #### 1-build
 #### 2-install : it contains many files, but right now two of them are important for us, namely "setup.bash" & "local_setup.bash". 
 ##### "local_setup.bash" will simply source only projekt1_ws workspace (overlay workspace). When I source "local_setup.bash" script, I can use whatever i created in porjekt1_ws workspace.
-##### "setup.bash" will source the projekt1_ws (overlay) pluse the global ROS2 intallation (underlay workspace), therefore the following command should be run to source the "setup.bash"
+##### "setup.bash" will source the projekt1_ws (overlay) pluse the global ROS2 intallation (underlay workspace), therefore to make things simpler the following command should be written in .bashrc file to source the "setup.bash".
 ```bash
 source ~/projekt1_ws/install/setup.bash
 ```
