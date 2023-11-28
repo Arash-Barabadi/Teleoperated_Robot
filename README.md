@@ -1,18 +1,17 @@
 gvncviewer 192.168.55.1# Teleoperated_Auto
 In a university course/project we as a student team focusing on building and testing a teleoperated robot.
-# https://f1tenth.readthedocs.io/en/foxy_test/getting_started/firmware/drive_workspace.html#installing-ros-2-and-its-utilities
 
 ## At first for building any packages we should install COLCON, therefore ;
 ```bash
 sudo apt install python3-colcon-common-extensions
 ```
 
-## For Automating every time usage of argcomplete-colcon feature, which is not enabled by default. So we should source the script "colcon-argcomplete.bash". Add the following lie to .bashrc file. 
+## For using auto completion feature, which is not enabled by default, we should source the script "colcon-argcomplete.bash". Add the following line to .bashrc file. 
+
 ```bash
 source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash
 ```
-
-
+# Create a ROS2 Workspace. 
 ## Creat a workspace and make a package ready into it.
 ```bash
 mkdir -p ~/projekt1_ws/src
