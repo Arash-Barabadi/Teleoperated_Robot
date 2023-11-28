@@ -12,12 +12,17 @@ sudo apt install python3-colcon-common-extensions
 source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash
 ```
 # Create a ROS2 Workspace. 
-## Creat a workspace and make a package ready into it.
+## Set up a workspace and make a package ready into it.
 ```bash
 mkdir -p ~/projekt1_ws/src
 cd projekt1_ws
 colcon build
 ```
+### When the workspace is created, it contains four different folder :
+#### 1-build
+#### 2-install
+#### 3-log
+#### 4-src(which has been created with the command "mkdir -p ~/projekt1_ws/src"
 ## Next, we’ll clone the repo into the src directory of our workspace
 ```bash
 cd src
