@@ -18,11 +18,12 @@ mkdir -p ~/projekt1_ws/src
 cd projekt1_ws
 colcon build
 ```
-### When the workspace is created, it contains four different folder :
+### When the workspace is created, it contains four different folders :
 #### 1-build
-#### 2-install
+#### 2-install : it contains many files, but right now two of them are important for us, namely: setup.bash & local_setup.bash. 
+
 #### 3-log
-#### 4-src(which has been created with the command "mkdir -p ~/projekt1_ws/src"
+#### 4-src (which has been created with the command "mkdir -p ~/projekt1_ws/src"
 ## Next, we’ll clone the repo into the src directory of our workspace
 ```bash
 cd src
