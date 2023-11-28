@@ -30,6 +30,8 @@ source ~/projekt1_ws/install/setup.bash
 
 #### 3-log
 #### 4-src (which has been created with the command "mkdir -p ~/projekt1_ws/src"
+## To create a ROS2 node, the Package is needed. Packages will allow user to implement the code into reusable blocks. Each package is an independent unit. For example, we can have a package to handle the camera, another package is for steering wheel of our Auto. ***It should be noted, that all the packages must be generated in src folder.***
+
 ## Next, we’ll clone the repo into the src directory of our workspace
 ```bash
 cd src
