@@ -6,7 +6,7 @@ In a university course/project we as a student team focusing on building and tes
 sudo apt install python3-colcon-common-extensions
 ```
 
-## For using auto completion feature, which is not enabled by default, we should source the script "colcon-argcomplete.bash". Add the following line to .bashrc file. 
+## For using auto completion feature, which is not enabled by default, we should source the script "colcon-argcomplete.bash". Add the following line to .bashrc file..
 
 ```bash
 source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash
