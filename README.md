@@ -46,7 +46,9 @@ ros2 pkg create my_py_pkg --build-type ament_python --dependencies rclpy
 ### 1-my_py_pkg folder: This folder has always the same name as the package. All of the python node will be placed in this folder. It already contains "__init__.py" file. It doesn't need to be changed right now.   
 ### 2-resource folder:
 ### 3-test folder:
-### 4-package.xml: Each package folder has a package.xml file, which includes basically two sub-sections. The first one contains information about the package like name, version, description, email and license, which can be adjusted based on what the developer person want to release. The scond section is related to the dependencies (library) which will be used by the package like rclpy. 
+### 4-package.xml: Each package folder has a package.xml file, which includes basically two sub-sections. The first one contains information about the package like name, version, description, email and license, which can be adjusted based on what the developer person want to release. The second section is related to the dependencies (library) which will be used by the package like rclpy. * If the user want to add new dependencies it should be written here as well, with the command : <depend>"dpendency name"</depend> .* At the end of the file, the type of the package ,which is here ament_python, can be seen. 
+### 5-setup.cfg: 
+### 6-setup.py:
 
 
 
