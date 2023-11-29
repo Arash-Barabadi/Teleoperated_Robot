@@ -76,8 +76,8 @@ Summary: 1 package finished [3.13s]
 # Connecting IMU to Jetson NX Orin 16Gb
 ### Ground=GND port 14
 ### POWER=VDD port 16
-### RXD= Data sender port
-### TX= Data reciever port 
+### RX= Data sender port
+### TX=  Data reciever port 
 ## Next, we’ll clone the repo into the src directory of our workspace
 ```bash
 cd src
