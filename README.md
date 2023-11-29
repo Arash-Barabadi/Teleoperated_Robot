@@ -6,7 +6,7 @@ In a university course/project we as a student team focusing on building and tes
 sudo apt install python3-colcon-common-extensions
 ```
 
-## For using auto completion feature, which is not enabled by default, we should source the script "colcon-argcomplete.bash". Add the following line to .bashrc file..
+## For using auto completion feature, which is not enabled by default, we should source the script "colcon-argcomplete.bash". Add the following line to .bashrc file.
 
 ```bash
 source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash
@@ -42,8 +42,11 @@ cd ~/projekt1_ws/src
 ```bash
 ros2 pkg create my_py_pkg --build-type ament_python --dependencies rclpy
 ```
-
-
+## *An overview of the contents of generated src folder.* 
+### 1-my_py_pkg folder: This folder has always the same name as the package. All of the python node will be placed in this folder. It already contains "__init__.py" file. It doesn't need to be changed right now.   
+### 2-resource folder:
+### 3-test folder:
+### 4-package.xml: Each package folder has a package.xml file, which includes basically two sub-sections. The first one contains information about the package like name, version, description, email and license, which can be adjusted based on what the developer person want to release. The scond section is related to the dependencies (library) which will be used by the package like rclpy. 
 
 
 
