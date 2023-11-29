@@ -53,21 +53,21 @@ ros2 pkg create my_py_pkg --build-type ament_python --dependencies rclpy
 ## Go back to the workspace address afterwards and type colcon build again, to confirm the creation of the new package "my_py_pkg"
 
 ```bash
-~/ros2_ws$ colcon build
+colcon build
 Starting >>> my_py_pkg
 Finished <<< my_py_pkg [1.23s]          
 
 Summary: 1 package finished [3.09s]
 ```
-## Or
+## Or if there are many packages, the following command can be written specifically for one package, therefore the compile time should be shorter.
 ```bash
-~/ros2_ws$ colcon build --packages-select my_py_pkg
+colcon build --packages-select my_py_pkg
 Starting >>> my_py_pkg
 Finished <<< my_py_pkg [1.26s]          
 
 Summary: 1 package finished [3.13s]
 ```
-
+## Now the python package is ready to host any python node.
 
 ## Next, we’ll clone the repo into the src directory of our workspace
 ```bash
