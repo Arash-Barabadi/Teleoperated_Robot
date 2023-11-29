@@ -59,7 +59,14 @@ Finished <<< my_py_pkg [1.23s]
 
 Summary: 1 package finished [3.09s]
 ```
+## Or
+```bash
+~/ros2_ws$ colcon build --packages-select my_py_pkg
+Starting >>> my_py_pkg
+Finished <<< my_py_pkg [1.26s]          
 
+Summary: 1 package finished [3.13s]
+```
 
 
 ## Next, we’ll clone the repo into the src directory of our workspace
