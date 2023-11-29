@@ -30,7 +30,7 @@ source ~/projekt1_ws/install/setup.bash
 #### 4-src (which has been created with the command "mkdir -p ~/projekt1_ws/src"
 
 # Create a ROS2 Package 
-### To create a ROS2 node, the Package is needed. Packages will allow user to implement the code into reusable blocks. Each package is an independent unit. For example, we can have a package to handle the camera, another package is for steering wheel of our Auto. ***It should be noted, that all the packages must be generated in src folder.***
+### To create a ROS2 node, the Package is needed. Packages will allow user to implement the code into reusable blocks. Each package is an independent unit. For example, we can have a package to handle the camera, another package is for steering wheel of our Auto.         ***It should be noted, that all the packages must be generated in src folder.***
 ## 1-navigate to the src(source) directory of the ROS packages. 
 ```bash
 cd ~/projekt1_ws/src
@@ -68,7 +68,8 @@ Finished <<< my_py_pkg [1.26s]
 Summary: 1 package finished [3.13s]
 ```
 ## Now the python package is ready to host any python node.
-
+#
+# Create a Node
 ## Next, we’ll clone the repo into the src directory of our workspace
 ```bash
 cd src
