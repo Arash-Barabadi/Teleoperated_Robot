@@ -42,6 +42,13 @@ cd ~/projekt1_ws/src
 ```bash
 ros2 pkg create my_py_pkg --build-type ament_python --dependencies rclpy
 ```
+
+
+
+
+
+
+
 ## Next, we’ll clone the repo into the src directory of our workspace
 ```bash
 cd src
