@@ -31,11 +31,11 @@ source ~/projekt1_ws/install/setup.bash
 
 # Create a ROS2 Package 
 ### To create a ROS2 node, the Package is needed. Packages will allow user to implement the code into reusable blocks. Each package is an independent unit. For example, we can have a package to handle the camera, another package is for steering wheel of our Auto. ***It should be noted, that all the packages must be generated in src folder.***
-## at first navigate to the src(source) directory of the ROS packages. 
+## 1-navigate to the src(source) directory of the ROS packages. 
 ```bash
 cd ~/projekt1_ws/src
 ```
-## and to create a package simply type : ros2 pkg create "a package name" "package type" "dependencies"
+## 2-create a package simply by typing: ros2 pkg create "a package name" "package type" "dependencies"
 ### "package name" : Simply choose a package name
 ### "package type" : Add an argument to specify which kind of package is desired. In ROS2 there is a diffrence between a python package and c++ package.
 ### "dependencies" : Dependencies are simply the packages, this new package relies on. 
