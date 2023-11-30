@@ -70,7 +70,8 @@ Summary: 1 package finished [3.13s]
 ## Now the python package is ready to host any python node.
 #
 # Create a Node
-#
+## A node is a subprogram in an application, responsible for only one thing.
+## Nodes are combined into a graph and communicate with each other through topics, services and parameters.
 #
 #
 # Connecting IMU to Jetson NX Orin 16Gb
