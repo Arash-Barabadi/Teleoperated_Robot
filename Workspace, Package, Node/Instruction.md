@@ -30,9 +30,9 @@ if __name__ == "__main__" :
     main()
 ```
 
-### A template for writing ROS2 python node would be something like below: 
-```python
+### A template for writing ROS2 python node would be something like below:
 
+```python
 #!/usr/bin/env python3
 
 #For using ROS2 functionalities, the rclpy library has been imported.
@@ -48,7 +48,7 @@ class MyNode(Node) :
         self.get_logger().info("Hello ROS2")
 
 
-def main(args=None):
+def main(args=None): 
     #For starting the ROS2 communication the following line must be written. 
     rclpy.init(args=args)
 
