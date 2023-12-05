@@ -5,8 +5,16 @@ In a university course/project we as a student team focusing on building and tes
 ```bash
 sudo apt install python3-colcon-common-extensions
 ```
-
-## For using auto completion feature, which is not enabled by default, we should source the script "colcon-argcomplete.bash". Add the following line to .bashrc file.
+## !!! 
+#### Please keep in mind that we have to source ROS2 global installation as below:
+```bash
+source /opt/ros/foxy/setup.bash
+```
+#### And source ROS2 local installation as below : 
+```bash
+source ~/projekt1_ws/install/setup.bash
+```
+#### For using auto completion feature, which is not enabled by default, we should source the script "colcon-argcomplete.bash". Add the following line to .bashrc file.
 
 ```bash
 source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash
@@ -17,15 +25,6 @@ source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash
 mkdir -p ~/projekt1_ws/src
 cd projekt1_ws
 colcon build
-```
-## !!! 
-#### Please keep in mind that we have to source ROS2 global installation as below:
-```bash
-source /opt/ros/foxy/setup.bash
-```
-#### And source ROS2 local installation as below : 
-```bash
-source ~/projekt1_ws/install/setup.bash
 ```
 ### When the workspace is created, it contains four different folders :
 #### 1-build
