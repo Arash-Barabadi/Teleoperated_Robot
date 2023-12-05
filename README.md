@@ -18,19 +18,20 @@ mkdir -p ~/projekt1_ws/src
 cd projekt1_ws
 colcon build
 ```
-### When the workspace is created, it contains four different folders :
-#### 1-build
-#### 2-install : it contains many files, but right now two of them are important for us, namely "setup.bash" & "local_setup.bash". 
-##### "local_setup.bash" will simply source only projekt1_ws workspace (overlay workspace). When I source "local_setup.bash" script, I can use whatever i created in porjekt1_ws workspace.
-##### "setup.bash" will source the projekt1_ws (overlay) pluse the global ROS2 intallation (underlay workspace), therefore to make things simpler the following command should be written in .bashrc file to source the "setup.bash".
-```bash
-source ~/projekt1_ws/install/setup.bash
-```
+## !!! 
 #### Please keep in mind that we have to source ROS2 global installation as below:
 ```bash
 source /opt/ros/foxy/setup.bash
 ```
 #### And source ROS2 local installation as below : 
+```bash
+source ~/projekt1_ws/install/setup.bash
+```
+### When the workspace is created, it contains four different folders :
+#### 1-build
+#### 2-install : it contains many files, but right now two of them are important for us, namely "setup.bash" & "local_setup.bash". 
+##### "local_setup.bash" will simply source only projekt1_ws workspace (overlay workspace). When I source "local_setup.bash" script, I can use whatever i created in porjekt1_ws workspace.
+##### "setup.bash" will source the projekt1_ws (overlay) pluse the global ROS2 intallation (underlay workspace), therefore to make things simpler the following command should be written in .bashrc file to source the "setup.bash".
 ```bash
 source ~/projekt1_ws/install/setup.bash
 ```
