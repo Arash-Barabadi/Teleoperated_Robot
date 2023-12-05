@@ -26,6 +26,15 @@ colcon build
 ```bash
 source ~/projekt1_ws/install/setup.bash
 ```
+#### Please keep in mind that we have to source ROS2 global installation as below:
+```bash
+source /opt/ros/foxy/setup.bash
+```
+#### And source ROS2 local installation as below : 
+```bash
+source ~/projekt1_ws/install/setup.bash
+```
+
 #### 3-log
 #### 4-src (which has been created with the command "mkdir -p ~/projekt1_ws/src"
 
