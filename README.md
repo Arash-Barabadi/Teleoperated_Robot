@@ -10,7 +10,7 @@ sudo apt install python3-colcon-common-extensions
 ```bash
 source /opt/ros/foxy/setup.bash
 ```
-#### And source ROS2 local installation as below : 
+#### And source ROS2 local installation as below (if we want to launch ros2 nodes which were created in our local package): 
 ```bash
 source ~/projekt1_ws/install/setup.bash
 ```
