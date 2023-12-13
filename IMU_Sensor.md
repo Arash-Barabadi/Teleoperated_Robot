@@ -4,7 +4,7 @@
 ### 1- Create a package as below;
 #### rclpy is the first library that the dependency to it should be adjusted at first. More dependcies can be added afterwards.
 ```bash
-ros2 pkg create IMU_sensor --build-type ament_python --dependencies rclpy
+ros2 pkg create imu --build-type ament_python --dependencies rclpy
 ```
 ### 2- Create the publisher & subscriber python nodes. 
 
