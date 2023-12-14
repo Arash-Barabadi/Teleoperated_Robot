@@ -2,7 +2,7 @@
 ## I'm going to make a node, which subscribes to sensor data (from the bank file) and publish some part of that data
 
 ### 1- Create a package as below;
-#### rclpy is the first library that the dependency to it should be adjusted at first. More dependcies can be added afterwards.
+#### rclpy is the first library that the dependency to it should be written at first. More dependcies can be added afterwards.
 ```bash
 ros2 pkg create imu --build-type ament_python --dependencies rclpy
 ```
