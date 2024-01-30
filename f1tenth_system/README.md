@@ -1,4 +1,4 @@
-# f1tenth_system
+# f1tenth_syste
 
 Drivers onboard f1tenth race cars. This branch is under development for migration to ROS2. See the [documentation of F1TENTH](https://f1tenth.readthedocs.io/en/foxy_test/getting_started/firmware/index.html) on how to get started.
 
