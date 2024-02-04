@@ -1,4 +1,4 @@
-gvncviewer 192.168.55.1# Teleoperated_Auto
+# Teleoperated_Auto
 In a university course/project we as a student team focusing on building and testing a teleoperated robot.
 
 ## At first for building any packages we should install COLCON, therefore ;
