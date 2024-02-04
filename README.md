@@ -29,7 +29,7 @@ colcon build
 ```
 ### Wenn der Workspace erstellt wird, enthält er vier verschiedene Ordner :
 #### 1-build
-#### 2-install: Sie enthält viele Dateien, aber im Moment sind zwei davon für uns wichtig, nämlich "setup.bash" & "local_setup.bash". 
+#### 2-installieren: Sie enthält viele Dateien, aber im Moment sind zwei davon für uns wichtig, nämlich "setup.bash" & "local_setup.bash". 
 ##### "local_setup.bash" wird einfach nur den Workspace projekt1_ws (Overlay-Workspace) sourcen. Wenn ich das Skript "local_setup.bash" verwende, kann ich alles verwenden, was ich im Arbeitsbereich von porjekt1_ws erstellt habe.
 ##### "setup.bash" wird das projekt1_ws (overlay) und die globale ROS2-Installation (underlay workspace) verwenden, daher sollte der Einfachheit halber der folgende Befehl in die .bashrc-Datei geschrieben werden, um die "setup.bash" zu verwenden.
 ```bash
@@ -41,26 +41,26 @@ source ~/projekt1_ws/install/setup.bash
 
 # Ein ROS2-Paket(Package) erstellen 
 ### Um einen ROS2-Knoten zu erstellen, wird ein Paket benötigt. Pakete ermöglichen es dem Benutzer, den Code in wiederverwendbare Blöcke zu implementieren. Jedes Paket ist eine unabhängige Einheit. Zum Beispiel können wir ein Paket haben, um die Kamera zu handhaben, ein anderes Paket ist für das Lenkrad unseres Autos.***Es sollte beachtet werden, dass alle Pakete im src-Ordner erzeugt werden müssen.***
-## 1-navigate to the src(source) directory of the ROS packages. 
+## 1. Navigiert wird zum src-verzeichnis der ROS-Pakete.
 ```bash
 cd ~/projekt1_ws/src
 ```
-## 2-create a package simply by typing: ros2 pkg create "a package name" "package type" "dependencies"
-### "package name" : Simply choose a package name
-### "package type" : Add an argument to specify which kind of package is desired. In ROS2 there is a diffrence between a python package and c++ package.
-### "dependencies" : Dependencies are simply the packages, this new package relies on. 
+## 2. Ein Paket wird einfach durch Eingabe erstellt: ros2 pkg create "Paketname" "Pakettyp" "Abhängigkeiten"
+### "Paketname": Wählen Sie einfach einen Paketnamen
+### "Pakettyp": Geben Sie ein Argument an, um anzugeben, welcher Art das Paket sein soll. In ROS2 gibt es einen Unterschied zwischen einem Python-Paket und einem C++-Paket.
+### "Abhängigkeiten": Abhängigkeiten sind einfach die Pakete, von denen dieses neue Paket abhängt.
 ```bash
 ros2 pkg create my_py_pkg --build-type ament_python --dependencies rclpy
 ```
-## ***An overview of the contents of generated src folder.*** 
-#### 1-my_py_pkg folder: This folder has always the same name as the package. All of the python nodes will be placed in this folder. It already contains "__init__.py" file. It doesn't need to be changed right now.   
+## ***Eine Übersicht über den Inhalt des generierten src-Ordners.*** 
+#### 1-mein_py_pkg Ordner: Dieser Ordner hat immer den gleichen Namen wie das Paket. Alle Python-Knoten werden in diesem Ordner abgelegt. Er enthält bereits die Datei "__init__.py". Sie braucht im Moment nicht geändert zu werden.   
 #### 2-resource folder:
 #### 3-test folder:
-#### 4-package.xml: Each package folder has a package.xml file, which includes basically two sub-sections. The first one contains information about the package like name, version, description, email and license, which can be adjusted based on what the developer person want to release. The second section is related to the dependencies (library) which will be used by the package like rclpy. ***If the user want to add new dependencies it should be written here as well.*** At the end of the file, the type of the package ,which is here ament_python, can be seen. 
+#### 4-package.xml: Jeder Paket-Ordner hat eine package.xml-Datei, die im Wesentlichen zwei Unterabschnitte enthält. Die erste enthält Informationen über das Paket wie Name, Version, Beschreibung, E-Mail und Lizenz, die je nach dem, was der Entwickler veröffentlichen möchte, angepasst werden können. Der zweite Abschnitt bezieht sich auf die Abhängigkeiten (Bibliotheken), die von dem Paket wie rclpy verwendet werden. ***Wenn der Benutzer neue Abhängigkeiten hinzufügen möchte, sollte dies ebenfalls hier eingetragen werden.*** Am Ende der Datei ist der Typ des Pakets zu sehen, der hier ament_python ist. 
 #### 5-setup.cfg: 
 #### 6-setup.py:
 
-## Go back to the workspace address afterwards and type colcon build again, to confirm the creation of the new package "my_py_pkg"
+## Gehen Sie danach zur Arbeitsbereichsadresse zurück und geben Sie erneut "colcon build" ein, um die Erstellung des neuen Pakets "my_py_pkg" zu bestätigen.
 
 ```bash
 colcon build
@@ -69,7 +69,7 @@ Finished <<< my_py_pkg [1.23s]
 
 Summary: 1 package finished [3.09s]
 ```
-## Or if there are many packages, the following command can be written specifically for one package, therefore the compile time should be shorter.
+## Oder wenn es viele Pakete gibt, kann der folgende Befehl speziell für ein Paket geschrieben werden, wodurch die Kompilierzeit kürzer sein sollte.
 ```bash
 colcon build --packages-select my_py_pkg
 Starting >>> my_py_pkg
@@ -77,18 +77,15 @@ Finished <<< my_py_pkg [1.26s]
 
 Summary: 1 package finished [3.13s]
 ```
-## Now the python package is ready to host any python node.
-#
-# Create a Node
-## A node is a subprogram in an application, responsible for only one thing.
-## Nodes are combined into a graph and communicate with each other through topics, services and parameters.
-#
+## Jetzt ist das Python-Paket bereit, jeden Python-Knoten zu hosten.
+
 #
 # Connecting IMU to Jetson NX Orin 16Gb
 ### Ground=GND port 14
 ### POWER=VDD port 16
 ### RX= Data sender port
 ### TX=  Data reciever port 
+
 ## Next, we’ll clone the repo into the src directory of our workspace
 ```bash
 cd src
@@ -132,7 +129,7 @@ sudo chmod 777 /dev/ttyACM0
 ros2 launch f1tenth_stack bringup_launch.py
 ````
 
-## The message? for testing the Steering wheel : 
+## The message for testing the Steering wheel : 
 ```bash
 ros2 topic echo /commands/servo/position
 ````
