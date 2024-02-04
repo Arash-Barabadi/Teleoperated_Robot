@@ -1,45 +1,46 @@
 # Teleoperiertes Fahren
-In a university course/project we as a student team focusing on building and testing a teleoperated robot.
+In einem Hochschulprojekt konzentrierten wir uns als Studententeam auf den Bau und das Testen eines teleoperierten Autos.
 
-## At first for building any packages we should install COLCON, therefore ;
+## Als ersten Schritt zur Erstellung von Paketen sollten wir daher COLCON installieren;
 ```bash
 sudo apt install python3-colcon-common-extensions
 ```
 ## !!! 
-#### Please keep in mind that we have to source ROS2 global installation as below:
+#### Bitte beachten Sie, dass wir die globale ROS2-Installation wie unten beschrieben vornehmen müssen:
 ```bash
 source /opt/ros/foxy/setup.bash
 ```
-#### And source ROS2 local installation as below (if we want to launch ros2 nodes which were created in our local package): 
+#### Und eine lokale ROS2-Installation wie unten (wenn wir die Ros2-Knoten starten wollen, die in unserem lokalen Paket erstellt wurden): 
 ```bash
 source ~/projekt1_ws/install/setup.bash
 ```
-#### For using auto completion feature, which is not enabled by default, we should source the script "colcon-argcomplete.bash". Add the following line to .bashrc file.
+#### Um die Funktion der automatischen Vervollständigung zu nutzen, die standardmäßig nicht aktiviert ist, 
+#### sollten wir das Skript "colcon-argcomplete.bash" erstellen. Fügen Sie die folgende Zeile zur .bashrc-Datei hinzu.
 
 ```bash
 source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash
 ```
-# Create a ROS2 Workspace. 
-## Set up a workspace and make a package ready into it.
+# Einen ROS2-Workspace erstellen. 
+## Richten Sie einen Workspace ein und stellen Sie dort ein Paket bereit.
 ```bash
 mkdir -p ~/projekt1_ws/src
 cd projekt1_ws
 colcon build
 ```
-### When the workspace is created, it contains four different folders :
+### Wenn der Workspace erstellt wird, enthält er vier verschiedene Ordner :
 #### 1-build
-#### 2-install : it contains many files, but right now two of them are important for us, namely "setup.bash" & "local_setup.bash". 
-##### "local_setup.bash" will simply source only projekt1_ws workspace (overlay workspace). When I source "local_setup.bash" script, I can use whatever i created in porjekt1_ws workspace.
-##### "setup.bash" will source the projekt1_ws (overlay) pluse the global ROS2 intallation (underlay workspace), therefore to make things simpler the following command should be written in .bashrc file to source the "setup.bash".
+#### 2-install: Sie enthält viele Dateien, aber im Moment sind zwei davon für uns wichtig, nämlich "setup.bash" & "local_setup.bash". 
+##### "local_setup.bash" wird einfach nur den Workspace projekt1_ws (Overlay-Workspace) sourcen. Wenn ich das Skript "local_setup.bash" verwende, kann ich alles verwenden, was ich im Arbeitsbereich von porjekt1_ws erstellt habe.
+##### "setup.bash" wird das projekt1_ws (overlay) und die globale ROS2-Installation (underlay workspace) verwenden, daher sollte der Einfachheit halber der folgende Befehl in die .bashrc-Datei geschrieben werden, um die "setup.bash" zu verwenden.
 ```bash
 source ~/projekt1_ws/install/setup.bash
 ```
 
 #### 3-log
-#### 4-src (which has been created with the command "mkdir -p ~/projekt1_ws/src"
+#### 4-src (das mit dem Befehl "mkdir -p ~/projekt1_ws/src" erstellt wurde)
 
-# Create a ROS2 Package 
-### To create a ROS2 node, the Package is needed. Packages will allow user to implement the code into reusable blocks. Each package is an independent unit. For example, we can have a package to handle the camera, another package is for steering wheel of our Auto.         ***It should be noted, that all the packages must be generated in src folder.***
+# Ein ROS2-Paket(Package) erstellen 
+### Um einen ROS2-Knoten zu erstellen, wird ein Paket benötigt. Pakete ermöglichen es dem Benutzer, den Code in wiederverwendbare Blöcke zu implementieren. Jedes Paket ist eine unabhängige Einheit. Zum Beispiel können wir ein Paket haben, um die Kamera zu handhaben, ein anderes Paket ist für das Lenkrad unseres Autos.***Es sollte beachtet werden, dass alle Pakete im src-Ordner erzeugt werden müssen.***
 ## 1-navigate to the src(source) directory of the ROS packages. 
 ```bash
 cd ~/projekt1_ws/src
