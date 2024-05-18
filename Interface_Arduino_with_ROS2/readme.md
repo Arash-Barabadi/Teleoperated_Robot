@@ -4,4 +4,5 @@
 
 ### In the Arduino programming language, similiar to C++, there are a lot of libraries available for simplfiying tasks, e.g, libraries for communicating with a PC, sending speed commands to motor drivers and so forth.
 ## __________________________________________________________________________
-### There are also a library to communicate with ROS2. Using this library, the Arduino can send/receive messages to the PC. These messages are converted to 
+# There is also a library for interfacing with ROS2. 
+### Using this library, the Arduino can send/receive messages to the PC. These messages are converted to topics on the PC side. 
