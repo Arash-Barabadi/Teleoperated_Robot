@@ -6,3 +6,6 @@
 ## __________________________________________________________________________
 # There is also a library for interfacing with ROS2. 
 ### Using this library, the Arduino can send/receive messages to the PC. These messages are converted to topics on the PC side. 
+### Arduino can Publish/subscribe data, similar to a ROS2 node. Actually, Arduino acts like the ROS2 hardware node.
+## Create an Arudino library for communicating with ROS2 system.
+
